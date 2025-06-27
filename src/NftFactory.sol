@@ -20,7 +20,7 @@ contract NftFactory is Ownable {
             implementation,
             abi.encodeWithSelector(
                 SimpleNft(implementation).safeMint.selector,
-                20
+                address(this)
             )
         );
 
